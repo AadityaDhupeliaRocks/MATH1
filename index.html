@@ -1,36 +1,119 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> MATH QUIZ 1 </title>
+  <head>
+    <meta charset="utf-8">
+    <title>Fraction to Percentage Game</title>
+<!--styles-->
+ <style>
+body{
+    background-image: linear-gradient(to right,red,orange,yellow);
+}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+#submit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 100px;
+  font-family:'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
 
-<link rel="stylesheet" type="text/css" href="game.css">
+}
 
-<script src="game_login.js"></script>
+input{
+    background-color: #af4cac; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 100px;
+  font-family:'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
+}
 
-</head>
-        <body style="background-color: green;"> 
-            <center>
-            <h1 style="color: blue;"> LOGIN FOR MATH QUIZ GAME </h1>
-            <div style="color: aliceblue;"> 
-                <h2 style="color: hotpink;">  <b> PLAYER ONE LOGIN  </b> </h2> 
-                <label> Username: </label>
-                <input placeholder="USERNAME"> 
-                </div>
-               
-                
+#header{
+    background-image: linear-gradient(pink,rgb(19, 171, 241),rgb(190, 75, 190)); /* Green */
+  border: none;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 100px;
+  font-family:'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
+}
 
+#question{
+    background-image: linear-gradient(rgb(235, 91, 91),rgb(216, 164, 164)); /* Green */
+  border: none;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 100px;
+  font-family:'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+}
 
-                <div style="color: aliceblue;"> 
-                    <h2 style="color: hotpink;">  <b>  PLAYER TWO LOGIN  </b> </h2> 
-                    <label> Username: </label>
-                    <input placeholder="USERNAME"> 
-                    </div>
-                    <button onclick="addUser()"> LOGIN </button> 
-                    </center>
-                    </body>
-                    
-                    </html>
+#Start{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 37px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 100px;
+  font-family:'Courier New', Courier, monospace;
+  display: block;
+  margin: auto;
+
+}
+ </style>
+ 
+ <label id="header">CIRCLES</label>
+ <br><br>
+ <button id="Start" onclick="StartGame">Start the Game</button>
+ <br><br><br>
+ <label id="question"></label>
+ <hr>
+ <label id="score"></label>
+ <br>
+ <br>
+ <br>
+ <input type="Enteryouranswer" placeholder="Enter Your Answer">
+ <br>
+ <br>
+ <br>
+ <button id="submit" onclick="SubmitAnswer">Submit</button>
+ <br>
+ <br>
+ <br>
+
+ </head>
+    <script src="code.js"></script>
+  </body>
+</html>
+
